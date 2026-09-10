@@ -1,13 +1,12 @@
-#1
+ #1
 import json
+import os
 
 class Authentication:
-
  def __init__(self):
         self.file_path = "users.json"
         self.users = self.load_users()
 
- 
  def load_users(self):
       try:
         with open("users.json", "r") as file:
