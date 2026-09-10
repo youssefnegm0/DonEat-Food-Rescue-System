@@ -2,6 +2,11 @@
 import json
 
 class Authentication:
+
+ def __init__(self):
+        self.file_path = "users.json"
+        self.users = self.load_users()
+
  
  def load_users(self):
       try:
